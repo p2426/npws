@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-columns: 4rem 7fr 2fr;
+    grid-template-areas:
+    "header         header   header"
+    "nav            nav      nav"
+    "asideLeft     main     asideRight";
+    column-gap: 2rem;
+    row-gap: 1rem;
+
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.container h1 {
+    font-size: 150px;
+}
+
+.header {
+    grid-area: header;
+    border: 1px solid black;
+}
+.main {
+    grid-area: main;
+    border: 1px solid green;
+}
+.asideLeft {
+    grid-area: asideLeft;
+    border: 1px solid red;
+}
+.asideLeft > div {
+    position: sticky;
+    top: 0;
+}
+.asideRight {
+    grid-area: asideRight;
+    border: 1px solid purple;
+}
