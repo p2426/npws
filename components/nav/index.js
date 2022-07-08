@@ -12,7 +12,6 @@ const Nav = function() {
                     <Link href={link.href}>
                         <a className={styles.link}>{link.text}</a>
                     </Link>
-                    {i !== Config.links.length - 1 && <span className={styles.separator}>/</span>}
                 </React.Fragment>
             )}
         )}

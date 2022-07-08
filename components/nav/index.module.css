@@ -5,10 +5,3 @@
 .link {
     padding: 0 1rem;
 }
-.separator {
-    display: inline-block;
-    content: '/';
-    vertical-align: sub;
-    font-size: 2rem;
-    pointer-events: none;
-}
